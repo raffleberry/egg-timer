@@ -4,6 +4,7 @@
 
   import { db } from "../stores/db.js";
   import { activeTimers } from "../stores/activeTimers.js";
+  import { beep } from "../utils/beep.js";
   
   export let tid;
   export let initialTime;
@@ -26,6 +27,9 @@
     running = true;
     timerId = setInterval(() => {
       if (timer == 0) {
+        beep();
+        alert("Stop! Stop!");
+        beep();
         stop();
       } else {
         timer = timer - 1;

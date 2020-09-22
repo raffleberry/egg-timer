@@ -27,7 +27,7 @@
 	<ul>
 		<li><NewTimer /></li>
 		{#each $db as t, index (t.tid)}
-		<li in:fly={{y:-(100 + index*100), duration:100 + index*50}}
+		<li in:fly={{y:-(index+1)*60, duration:100 + (index+1)*60}}
 				out:fade={{duration:100}}
 				animate:flip="{{duration: 200}}">
 			<Timer  tid={t.tid} initialTime={t.time} name={t.name}/>
