@@ -1,5 +1,7 @@
 # 🥚 Timer
 
+## [Demo](https://egg-timer.vercel.app/)
+
 ## Get started
 
 Install the dependencies...
@@ -69,7 +71,7 @@ Then, from within your project folder:
 
 ```bash
 cd public
-vercel deploy --name my-project
+vercel deploy --name egg-timer
 ```
 
 ### With [surge](https://surge.sh/)
@@ -84,5 +86,5 @@ Then, from within your project folder:
 
 ```bash
 npm run build
-surge public my-project.surge.sh
+surge public egg-timer.surge.sh
 ```
